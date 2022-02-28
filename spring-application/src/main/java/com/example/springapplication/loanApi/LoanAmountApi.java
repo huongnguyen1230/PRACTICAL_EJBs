@@ -15,6 +15,7 @@ public class LoanAmountApi {
         double loanAmount =  loan.getLoanAmount();
         double tenure =  loan.getTenure();
         double rate =  loan.getRate()/100;
-        return new ResponseEntity<>(loan, HttpStatus.OK);
+        double totalLoan = loanAmount * rate * (Math.pow((1+rate),tenure)/(Math.pow((1+rate),tenure) - 1)) * 1/12;
+        return new ResponseEntity<>(totalLoan, HttpStatus.OK);
     }
 }
