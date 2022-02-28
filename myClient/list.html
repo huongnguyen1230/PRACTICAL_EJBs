@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body, h1, h2, h3, h4, h5 {
+            font-family: "Poppins", sans-serif
+        }
+    </style>
+</head>
+<body>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-purple w3-collapse w3-top w3-large w3-padding" id="mySidebar"
+     style="z-index:3;width:300px;font-weight:bold;"><br>
+    <div class="w3-bar-block">
+        <a class="w3-bar-item w3-button w3-hover-white" href="list.html" onclick="w3_close()"></i>LIST</a>
+        <a class="w3-bar-item w3-button w3-hover-white" href="form.html" onclick="w3_close()">ADD FORM</a>
+    </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" id="showcase" style="margin-top:25px">
+        <h1 class="w3-xxxlarge w3-text-purple"><b>WELCOME</b></h1>
+    </div>
+
+    <!-- HOME -->
+    <div class="w3-container" id="packages" style="margin-top:50px">
+        <h2 class="w3-text-purple"><b>HOME</b></h2>
+    </div>
+
+    <div class="w3-row-padding">
+        <table class="w3-table-all w3-hoverable">
+            <thead>
+            <tr class="w3-purple" style="height: 20px">
+                <th>Loan Amount</th>
+                <th>Tenure</th>
+                <th>Rate of interesting</th>
+            </tr>
+            </thead>
+            <tbody id="my-table">
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="js/list.js"></script>
+<script src="js/data.json"></script>
+</body>
+</html>

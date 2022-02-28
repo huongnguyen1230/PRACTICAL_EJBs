@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    </style>
+</head>
+<body>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-purple w3-collapse w3-top w3-large w3-padding" id="mySidebar"
+         style="z-index:3;width:300px;font-weight:bold;"><br>
+        <div class="w3-bar-block">
+            <a class="w3-bar-item w3-button w3-hover-white" href="list.html" onclick="w3_close()"></i>LIST</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="form.html" onclick="w3_close()">FORM</a>
+        </div>
+    </nav>
+    <!-- NEW PRODUCT -->
+    <div class="w3-container" id="create" style="margin-left:340px;margin-right:40px; margin-top:50px">
+        <h2 class=" w3-text-purple"><b>ADD FORM</b></h2>
+        <form name="add-form" target="_blank" style="margin-top:70px">
+            <div class="w3-row w3-section">
+                <div class="w3-rest">
+                    <div class="w3-col" style="width:50px; color: purple">LOAN AMOUNT</div>
+                    <input class="w3-input w3-border" name="loanAmount" type="text" placeholder="Enter loan amount">
+                </div>
+            </div>
+
+            <div class="w3-row w3-section">
+                <div class="w3-rest">
+                    <div class="w3-col" style="width:50px; color: purple">TENURE</div>
+                    <input class="w3-input w3-border" name="tenure" type="text" placeholder="Enter tenure">
+                </div>
+            </div>
+
+            <div class="w3-row w3-section">
+                <div class="w3-rest">
+                    <div class="w3-col" style="width:50px; color: purple">RATE</div>
+                    <input class="w3-input w3-border" name="rate" type="text" placeholder="Enter rate of interest">
+                </div>
+            </div>
+
+            <button type="submit" class="w3-button w3-block w3-padding-large w3-purple w3-margin-bottom">Send Message</button>
+        </form>
+    </div>
+    <script src="js/form.js"></script>
+</body>
+</html>
