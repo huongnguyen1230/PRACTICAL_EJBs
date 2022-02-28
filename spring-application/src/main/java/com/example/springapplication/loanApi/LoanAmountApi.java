@@ -3,11 +3,9 @@ package com.example.springapplication.loanApi;
 import com.example.springapplication.entity.Loan;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin
 @RequestMapping("api/v1/emi")
 @RestController
 public class LoanAmountApi {
